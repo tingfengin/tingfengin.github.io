@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><title>授权完成</title>
+<body style="font-family:sans-serif;max-width:560px;margin:60px auto">
+<h2>授权码</h2><p>把下面这串授权码复制到 Tesla Bot 的加密输入框里（10 分钟内有效）：</p>
+<textarea id="c" rows="4" style="width:100%" readonly></textarea>
+<script>var p=new URLSearchParams(location.search);document.getElementById('c').value=p.get('code')||('没有拿到授权码：'+(p.get('error')||''));</script>
+</body>
